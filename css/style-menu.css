@@ -1,0 +1,233 @@
+body {
+    position: fixed;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    margin-right: auto;
+    box-shadow: 16px 0px 52px 0px #0E185033;
+    color: #1B1C21;
+}
+
+.container--scroll {
+    height: 100%;
+    overflow: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    appearance: none;
+    width: 1px;
+    height: 1px;
+    margin: -2px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.flex-container--header-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-container--footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.header {
+    margin-bottom: 46px;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 19px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-menu-container {
+    margin-left: 24px;
+    margin-right: 17px;
+}
+
+.burger-menu-label {
+    position: relative;
+    display: block;
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-image: url('../images/burger-off.svg');
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.header__burger-menu-checkbox:checked + .burger-menu-label{
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-image: url('../images/burger.svg');
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: all 0.7s ease;
+}
+
+.header__logo-img {
+    width: 97px;
+    height: auto;
+}
+
+.header__navigation-button {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.button-search-container {
+    margin-right: 24px;
+}
+
+.header__button-search {
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-image: url('../images/search.svg');
+}
+
+.main-navigation__list__item__button {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    background-color: white;
+    border: none;
+}
+
+.main-navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-navigation__list__item {
+    display: inline-flex;
+    margin-bottom: 24px;
+    padding: 5px 0 5px 24px;
+}
+
+.main-navigation__list__item:hover {
+    background-image: url('../images/highlight.svg');
+    height: 32px;
+    background-repeat: no-repeat; 
+}
+
+.main-navigation__list__item__button {
+    padding: 0;
+    font-size: 16px;
+    
+}
+
+.main-navigation__list__item__button:hover {
+    color: rgba(27, 28, 33, 0.6);
+
+}
+
+.footer__container--rose-buttons { 
+    margin-right: 144px;
+    margin-bottom: 16px;
+}
+
+.header__button-call {
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-image: url('../images/call.svg');
+}
+
+.header__button-chat {
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-image: url('../images/chat.svg');
+}
+
+.header__button-profile {
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-image: url('../images/profile.svg');
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    justify-content: space-between;
+}
+
+.footer__navigation {
+    margin-bottom: auto;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #1B1C21;
+    font-family: 'TT Lakes';
+}
+
+.footer__link-container {
+    margin-bottom: 12px;
+}
+
+.footer__link--mail { 
+    font-size: 16px;
+}
+
+.footer__link--number {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer__navigation-cantainer {
+    margin-bottom: 32px;
+}
+
+.footer__list-lang {
+    margin: 0;
+    list-style-type: none;
+    width: 87px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.footer__link-lang {
+    text-decoration: none;
+    color: #1B1C21;
+    font-family: 'TT Lakes';
+}
+
+.footer__link-lang:hover {
+    opacity: 0.5;
+}
+
